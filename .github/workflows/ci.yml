@@ -1,8 +1,10 @@
 name: second workflow
+
 on: push
+
 jobs:
-hi:
-runs-on: ubuntu-latest
-steps:
-- name: Print message
-run: echo "Hi Siddu"
+  hi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "Hi Siddu"
