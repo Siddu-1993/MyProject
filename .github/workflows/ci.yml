@@ -5,4 +5,4 @@ jobs:
   Hello:
     runs-on: ubuntu-latest
       steps:
-        - - run: echo "hello siddu"
+        - run: echo "hello siddu"
