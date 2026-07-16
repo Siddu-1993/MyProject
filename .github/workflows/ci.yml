@@ -5,5 +5,5 @@ jobs:
   hi:
     runs-on: ubuntu-latest
      steps:
-        name: Print message
+        - name: Print message
         run: echo "Hi Siddu"
