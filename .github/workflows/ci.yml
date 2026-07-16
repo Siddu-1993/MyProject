@@ -1,12 +1,18 @@
-name: My First Workflow
-
-on:
-  push
-
+name: day34 practice
+on: push
 jobs:
-  hello:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Print Message
-        run: echo "Hello Siddu"
+  build:
+   runs-on: ubuntu-latest
+   steps:
+     - name: checkout repository
+       uses: actions/checkout@v4
+     - name: current folder
+       run: pwd
+     - name: list files
+       run: ls
+     - name: current user
+       run: whoami
+     - name: OS details
+       run: uname -a
+     - name: print message
+       run: echo "Will Kill You
