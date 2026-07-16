@@ -1,8 +1,12 @@
 name: My First Workflow
-on: push
+
+on:
+  push
 
 jobs:
-  Hello:
+  hello:
     runs-on: ubuntu-latest
-      steps:
-        - run: echo "hello siddu"
+
+    steps:
+      - name: Print Message
+        run: echo "Hello Siddu"
