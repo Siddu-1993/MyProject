@@ -32,4 +32,4 @@ jobs:
       - name: Show downloaded files
         run: |
           ls -R
-          cat my-files/result.txt
+          cat result.txt
