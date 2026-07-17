@@ -1,15 +1,21 @@
-name: Matrix Practice
+name: Matrix Combination
 
 on: workflow_dispatch
 
 jobs:
-  matrix-demo:
+  test:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
+        node: [18, 20]
 
     runs-on: ${{ matrix.os }}
 
     steps:
-      - name: Print OS
-        run: echo "Running on ${{ matrix.os }}"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - run: |
+          echo "OS: ${{ matrix.os }}"
+          node --version
